@@ -1,0 +1,59 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#0b0f19" rx="12"/>
+    <defs>
+        <linearGradient id="blueGrad" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#818cf8" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient id="purpleGrad" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#a78bfa" stop-opacity="1"/>
+        </linearGradient>
+    </defs>
+    
+    <!-- Title -->
+    <text x="400" y="30" font-family="'Outfit', sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">Experiment 1: Scalability Analysis (100 Tasks)</text>
+    
+    <!-- Left Chart: Completion Time -->
+    <!-- X-axis from 80 to 360, Y-axis from 320 to 80 -->
+    <text x="220" y="65" font-family="'Outfit', sans-serif" font-size="14" fill="#a3a3a3" text-anchor="middle">Completion Time (s) - Lower is Better</text>
+    <line x1="80" y1="320" x2="360" y2="320" stroke="#374151" stroke-width="1"/>
+    <line x1="80" y1="80" x2="80" y2="320" stroke="#374151" stroke-width="1"/>
+    
+        <rect x="95.0" y="100.0" width="40" height="220.0" fill="url(#blueGrad)" rx="4"/>
+        <text x="115.0" y="92.0" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">0.41s</text>
+        <text x="115.0" y="340" font-family="'Outfit', sans-serif" font-size="12" fill="#a3a3a3" text-anchor="middle">1 Worker</text>
+        
+        <rect x="165.0" y="209.38641084990024" width="40" height="110.61358915009976" fill="url(#blueGrad)" rx="4"/>
+        <text x="185.0" y="201.38641084990024" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">0.20s</text>
+        <text x="185.0" y="340" font-family="'Outfit', sans-serif" font-size="12" fill="#a3a3a3" text-anchor="middle">2 Workers</text>
+        
+        <rect x="235.0" y="264.42690773380684" width="40" height="55.57309226619317" fill="url(#blueGrad)" rx="4"/>
+        <text x="255.0" y="256.42690773380684" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">0.10s</text>
+        <text x="255.0" y="340" font-family="'Outfit', sans-serif" font-size="12" fill="#a3a3a3" text-anchor="middle">4 Workers</text>
+        
+        <rect x="305.0" y="264.0200012447933" width="40" height="55.9799987552067" fill="url(#blueGrad)" rx="4"/>
+        <text x="325.0" y="256.0200012447933" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">0.10s</text>
+        <text x="325.0" y="340" font-family="'Outfit', sans-serif" font-size="12" fill="#a3a3a3" text-anchor="middle">8 Workers</text>
+        
+    <text x="580" y="65" font-family="'Outfit', sans-serif" font-size="14" fill="#a3a3a3" text-anchor="middle">Throughput (Tasks/s) - Higher is Better</text>
+    <line x1="440" y1="320" x2="720" y2="320" stroke="#374151" stroke-width="1"/>
+    <line x1="440" y1="80" x2="440" y2="320" stroke="#374151" stroke-width="1"/>
+    
+        <rect x="455.0" y="264.42690773380684" width="40" height="55.57309226619317" fill="url(#purpleGrad)" rx="4"/>
+        <text x="475.0" y="256.42690773380684" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">246.28/s</text>
+        <text x="475.0" y="340" font-family="'Outfit', sans-serif" font-size="12" fill="#a3a3a3" text-anchor="middle">1 W</text>
+        
+        <rect x="525.0" y="209.47035899927243" width="40" height="110.52964100072755" fill="url(#purpleGrad)" rx="4"/>
+        <text x="545.0" y="201.47035899927243" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">489.82/s</text>
+        <text x="545.0" y="340" font-family="'Outfit', sans-serif" font-size="12" fill="#a3a3a3" text-anchor="middle">2 W</text>
+        
+        <rect x="595.0" y="100.0" width="40" height="220.0" fill="url(#purpleGrad)" rx="4"/>
+        <text x="615.0" y="92.0" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">974.94/s</text>
+        <text x="615.0" y="340" font-family="'Outfit', sans-serif" font-size="12" fill="#a3a3a3" text-anchor="middle">4 W</text>
+        
+        <rect x="665.0" y="101.59913236108545" width="40" height="218.40086763891455" fill="url(#purpleGrad)" rx="4"/>
+        <text x="685.0" y="93.59913236108545" font-family="'Outfit', sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">967.86/s</text>
+        <text x="685.0" y="340" font-family="'Outfit', sans-serif" font-size="12" fill="#a3a3a3" text-anchor="middle">8 W</text>
+        
+</svg>

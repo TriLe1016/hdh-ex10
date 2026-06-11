@@ -1,0 +1,30 @@
+<svg width="600" height="350" viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="#0b0f19" rx="12"/>
+    <defs>
+        <linearGradient id="policyGrad" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#10b981" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#34d399" stop-opacity="1"/>
+        </linearGradient>
+    </defs>
+    
+    <!-- Title -->
+    <text x="300" y="35" font-family="'Outfit', sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">Experiment 2: Policy Comparison</text>
+    <text x="300" y="65" font-family="'Outfit', sans-serif" font-size="13" fill="#a3a3a3" text-anchor="middle">Average Task Response Time (s) under Heterogeneous Load</text>
+    
+    <!-- Axes -->
+    <line x1="80" y1="280" x2="520" y2="280" stroke="#374151" stroke-width="1"/>
+    <line x1="80" y1="90" x2="80" y2="280" stroke="#374151" stroke-width="1"/>
+    
+        <rect x="118.33333333333331" y="121.86193400668844" width="70" height="158.13806599331156" fill="url(#policyGrad)" rx="6"/>
+        <text x="153.33333333333331" y="113.86193400668844" font-family="'Outfit', sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">0.007s</text>
+        <text x="153.33333333333331" y="305" font-family="'Outfit', sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">FIFO</text>
+        
+        <rect x="265.0" y="129.53976122399493" width="70" height="150.46023877600507" fill="url(#policyGrad)" rx="6"/>
+        <text x="300.0" y="121.53976122399493" font-family="'Outfit', sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">0.006s</text>
+        <text x="300.0" y="305" font-family="'Outfit', sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Round Robin</text>
+        
+        <rect x="411.66666666666663" y="120.0" width="70" height="160.0" fill="url(#policyGrad)" rx="6"/>
+        <text x="446.66666666666663" y="112.0" font-family="'Outfit', sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">0.007s</text>
+        <text x="446.66666666666663" y="305" font-family="'Outfit', sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Least Loaded</text>
+        
+</svg>
